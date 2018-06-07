@@ -1,0 +1,108 @@
+#uabb-cloud-templates-form .site-single {
+    text-align: left;
+}
+
+#uabb-cloud-templates-form .site-single .template-meta > h3 {
+    margin: 1em;
+}
+
+#uabb-cloud-templates-form .site-single .uabb-template-actions {
+    position: absolute;
+    right: 2em;
+    bottom: 0.8em;
+}
+
+#uabb-cloud-templates-form .uabb-template-type a.active {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 4px solid #666;
+    color: #23282d;
+    /* line-height: 3; */
+}
+
+#uabb-template-category,
+#uabb-template-tag {
+    position: absolute;
+    left: 0em;
+    top: 6.5em;
+}
+
+div#uabb-templates-filters {
+    padding: 0;
+    margin-bottom: 6em;
+}
+
+#uabb-cloud-templates-form .uabb-template-tag a.active,
+#uabb-cloud-templates-form .uabb-template-category a.active {
+    border: none;
+    /* margin: 0 2em; */
+}
+
+.uabb-template-tag.filter-links li > a,
+.uabb-template-category.filter-links li > a {
+    border: none;
+    text-transform: capitalize;
+    font-weight: normal;
+    /* color: #333; */
+    /* font-size: initial; */
+}
+
+#uabb-templates-filters .filter-count {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+    line-height: normal;
+}
+
+#uabb-cloud-templates-form .uabb-template-type a {
+    /* color: #444; */
+    line-height: 4;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+#uabb-templates-filters .search-form input {
+    border-radius: 0;
+    font-size: 1em;
+}
+
+#uabb-cloud-templates-form .uabb-template-tag a[data-slug="all"],
+#uabb-cloud-templates-form .uabb-template-category a[data-slug="all"] {
+    margin-left: 1em;
+}
+
+#uabb-templates-filters .search-form {
+    margin-right: 1em;
+}
+
+#uabb-cloud-templates-form .uabb-template-tag.filter-links a,
+#uabb-cloud-templates-form .uabb-template-category.filter-links a {
+    margin: 0 1.2em;
+}
+
+#all-installed-row,
+#all-installed-layout {
+    text-align: center !important;
+    background: #27ae60 !important;
+    color: #fff !important;
+    padding: 5px 10px !important;
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#uabb-cloud-templates-form .uabb-template-type-row.site-single .template-meta {
+    display: block;
+}
+
+#uabb-cloud-templates-form #uabb-templates-filters .filter-count {
+    background: transparent;
+    height: auto;
+    width: auto;
+    font-weight: initial;
+    line-height: normal;
+    box-shadow: none;
+}
