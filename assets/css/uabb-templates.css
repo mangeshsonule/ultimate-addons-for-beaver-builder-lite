@@ -25,18 +25,18 @@
 #uabb-template-tag {
     position: absolute;
     left: 0em;
-    top: 6.5em;
+    top: 6em;
 }
 
-div#uabb-templates-filters {
-    padding: 0;
+#uabb-cloud-templates-form #uabb-templates-filters {
+    margin-top: 1em;
     margin-bottom: 6em;
+    padding: 0 10px;
 }
 
 #uabb-cloud-templates-form .uabb-template-tag a.active,
 #uabb-cloud-templates-form .uabb-template-category a.active {
     border: none;
-    /* margin: 0 2em; */
 }
 
 .uabb-template-tag.filter-links li > a,
@@ -44,8 +44,7 @@ div#uabb-templates-filters {
     border: none;
     text-transform: capitalize;
     font-weight: normal;
-    /* color: #333; */
-    /* font-size: initial; */
+     color: #0073aa; 
 }
 
 #uabb-templates-filters .filter-count {
@@ -58,7 +57,7 @@ div#uabb-templates-filters {
 }
 
 #uabb-cloud-templates-form .uabb-template-type a {
-    /* color: #444; */
+    color: #444;
     line-height: 4;
     font-weight: normal;
     text-transform: capitalize;
