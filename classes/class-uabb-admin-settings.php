@@ -230,7 +230,7 @@ final class UABBBuilderAdminSettings {
 		
 		foreach ( $sorted_data as $data ) {
 			if ( $data['show'] ) {
-				echo '<li><a href="#' . $data['key'] . '">' . $data['title'] . '</a></li>';
+				echo '<a class="nav-tab" href="#' . $data['key'] . '">' . $data['title'] . '</a>';
 			}
 		}
 

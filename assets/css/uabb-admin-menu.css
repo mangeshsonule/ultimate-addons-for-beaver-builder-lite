@@ -13,7 +13,14 @@
 /* Nav
 ----------------------------------------------------------- */
 
-.fl-settings-nav {
+.nav-tab.fl-active {
+    border-bottom: 1px solid #f1f1f1;
+    background: #f1f1f1;
+    color: #000;
+    margin-bottom: -1px;
+}
+
+/*.fl-settings-nav {
     float: left;
     margin: 15px 2% 0 0;
     width: 19%;
@@ -39,7 +46,7 @@
 }
 .fl-settings-nav ul li:last-child a {
     border-bottom: none;
-}
+}*/
 .fl-settings-nav a {
     text-decoration: none;
 }
@@ -118,11 +125,11 @@
 /* Content
 ----------------------------------------------------------- */
 
-.fl-settings-content {
+/*.fl-settings-content {
     float: left;
     margin-top: 15px;
     width: 78%;
-}
+}*/
 .fl-settings-form-content h4 {
     font-size: 14px;
     margin: 30px 0 5px;

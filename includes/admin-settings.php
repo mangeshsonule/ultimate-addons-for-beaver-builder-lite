@@ -6,10 +6,8 @@
 	
 	<?php UABBBuilderAdminSettings::render_update_message(); ?>
 
-	<div class="fl-settings-nav">
-		<ul>
-			<?php UABBBuilderAdminSettings::render_nav_items(); ?>
-		</ul>
+	<div class="fl-settings-nav nav-tab-wrapper">
+		<?php UABBBuilderAdminSettings::render_nav_items(); ?>
 	</div>
 
 	<div class="fl-settings-content">
