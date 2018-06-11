@@ -42,8 +42,7 @@ if ( ! class_exists( 'UABB_Templates_Shortcode' ) ) :
 		 *
 		 * @since 1.0.0
 		 */
-		public function __construct()
-		{
+		public function __construct() {
 			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 			add_shortcode( 'uabb-templates', array( $this, 'page_templates' ) );

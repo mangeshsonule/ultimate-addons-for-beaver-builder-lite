@@ -55,8 +55,7 @@ if ( ! class_exists( 'UABB_Templates_Theme_Astra' ) ) :
 		 *
 		 * @return void
 		 */
-		function theme_setup()
-		{
+		function theme_setup() {
 			$theme = wp_get_theme();
 			if ( 'astra' === $theme->get( 'TextDomain' ) ) {
 				add_filter( 'astra_sites_showcase_row_class', array( $this, 'row_class' ) );
@@ -84,8 +83,7 @@ if ( ! class_exists( 'UABB_Templates_Theme_Astra' ) ) :
 		 *
 		 * @return string Column class.
 		 */
-		function column_classes()
-		{
+		function column_classes() {
 			return array(
 				'1' => 'ast-col-md-12 uabb-templates-col-md-12',
 				'2' => 'ast-col-md-6 uabb-templates-col-md-6',

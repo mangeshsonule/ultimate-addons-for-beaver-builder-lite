@@ -72,9 +72,9 @@
 	<# if ( data ) { #>
 
 		<div class="inner">
-			
+
 			<# if( data.args.no_of_visible_items && 1 <= parseInt( data.args.no_of_visible_items ) ) { #>
-				
+
 				<# var no_of_visible_items = parseInt( data.args.no_of_visible_items ); #>
 
 				<ul class="{{ data.args.wrapper_class }} {{ data.args.class }}">
@@ -87,7 +87,7 @@
 
 					<# for ( key in data.items ) { #>
 						<# if ( data.items[ key ].count ) { #>
-			
+
 							<# var classes = ''; #>
 							<# if ( data.items[ key ]['uabb-template-type'] ) { #>
 							<# classes = data.items[ key ]['uabb-template-type'].join(" "); #>
@@ -140,7 +140,7 @@
 
 					<# for ( key in data.items ) { #>
 						<# if ( data.items[ key ].count ) { #>
-			
+
 							<# var classes = ''; #>
 							<# if ( data.items[ key ]['uabb-template-type'] ) { #>
 							<# classes = data.items[ key ]['uabb-template-type'].join(" "); #>
@@ -156,7 +156,7 @@
 					<# } #>
 
 				</ul>
-				
+
 			<# } #>
 
 		</div>

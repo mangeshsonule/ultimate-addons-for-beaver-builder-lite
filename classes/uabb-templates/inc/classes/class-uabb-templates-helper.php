@@ -51,20 +51,21 @@ if ( ! class_exists( 'UABB_Templates_Helper' ) ) :
 		 * @since 1.0.0
 		 * @return array Page settings.
 		 */
-		public static function get_page_settings()
-		{
-			$settings_defaults = apply_filters( 'uabb_templates_default_settings', array(
-				'open-template-in'               => 'tab', // Leave empty to open in iFrame
-				'row-par-page'                   => '28', // Sections per page.
-				'layout-par-page'                => '9', // Page Layouts per page.
-				'no-of-columns'                  => '3',
-				'show-count'                     => false,
-				'show-search'                    => false,
-				'show-all-option-for-types'      => false,
-				'show-all-option-for-categories' => true,
-				'no-of-visible-items-tags'       => -1, // Show the no. of items in <ul> and rest in <select>. Add negative number to show all.
-				'no-of-visible-items-categories' => 10, // Show the no. of items in <ul> and rest in <select>.
-			));
+		public static function get_page_settings() {
+			$settings_defaults = apply_filters(
+				'uabb_templates_default_settings', array(
+					'open-template-in'               => 'tab', // Leave empty to open in iFrame.
+					'row-par-page'                   => '28', // Sections per page.
+					'layout-par-page'                => '9', // Page Layouts per page.
+					'no-of-columns'                  => '3',
+					'show-count'                     => false,
+					'show-search'                    => false,
+					'show-all-option-for-types'      => false,
+					'show-all-option-for-categories' => true,
+					'no-of-visible-items-tags'       => -1, // Show the no. of items in <ul> and rest in <select>. Add negative number to show all.
+					'no-of-visible-items-categories' => 10, // Show the no. of items in <ul> and rest in <select>.
+				)
+			);
 
 			// Stored Settings.
 			$settings = get_option( 'uabb-templates-settings', $settings_defaults );
