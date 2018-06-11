@@ -31,7 +31,7 @@
 </script>
 
 <script type="text/template" id="tmpl-uabb-templates-load-more-sites">
-	<span class="uabb-templates-load-more-sites button"><?php _e( 'Load More', 'uabb' ); ?></span>
+	<span class="uabb-templates-load-more-sites button button-primary"><?php _e( 'Load More', 'uabb' ); ?></span>
 </script>
 
 <script type="text/template" id="tmpl-uabb-templates-no-more-demos">

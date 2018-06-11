@@ -1,7 +1,5 @@
 <div id="fl-uabb-cloud-templates-form" class="fl-settings-form uabb-cloud-templates-fl-settings-form">
 
-	<h3 class="fl-settings-form-header"><?php _e( 'Template Cloud', 'uabb' ); ?></h3>
-
 	<div class="uabb-go-premium"><?php _e( '<a href="' . BB_ULTIMATE_ADDON_UPGRADE_URL . '" target="_blank">Go Premium</a> and get access to all Page Templates and Sections.', 'uabb' ); ?></div>
 
 	<form id="uabb-cloud-templates-form" action="<?php UABBBuilderAdminSettings::render_form_action( 'uabb-cloud-templates' ); ?>" method="post">
