@@ -15,6 +15,7 @@
   "homepage": "https://github.com/brainstormforce/ultimate-addons-for-beaver-builder-lite#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-wp-i18n": "~1.0.0",
     "grunt-wp-readme-to-markdown": "^2.0.1"
   }
 }

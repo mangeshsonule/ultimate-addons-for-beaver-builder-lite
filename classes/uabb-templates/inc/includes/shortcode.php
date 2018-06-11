@@ -31,12 +31,12 @@
 </script>
 
 <script type="text/template" id="tmpl-uabb-templates-load-more-sites">
-	<span class="uabb-templates-load-more-sites button"><?php _e( 'Load More', 'uabb-templates' ); ?></span>
+	<span class="uabb-templates-load-more-sites button"><?php _e( 'Load More', 'uabb' ); ?></span>
 </script>
 
 <script type="text/template" id="tmpl-uabb-templates-no-more-demos">
 	<span class="no-more-demos">
-		<p><?php _e( 'Stay tuned! More awesome templates coming real soon.', 'uabb-templates' ); ?></p>
+		<p><?php _e( 'Stay tuned! More awesome templates coming real soon.', 'uabb' ); ?></p>
 	</span>
 </script>
 
@@ -48,8 +48,8 @@
 
 <script type="text/template" id="tmpl-uabb-templates-search">
 	<div class="search-form">
-		<label class="screen-reader-text" for="wp-filter-search-input"><?php _e( 'Search Sites', 'uabb-templates' ); ?> </label>
-		<input placeholder="<?php _e( 'Search Sites...', 'uabb-templates' ); ?>" type="search" aria-describedby="live-search-desc" id="wp-filter-search-input" class="wp-filter-search">
+		<label class="screen-reader-text" for="wp-filter-search-input"><?php _e( 'Search Sites', 'uabb' ); ?> </label>
+		<input placeholder="<?php _e( 'Search Sites...', 'uabb' ); ?>" type="search" aria-describedby="live-search-desc" id="wp-filter-search-input" class="wp-filter-search">
 	</div>
 </script>
 
@@ -81,7 +81,7 @@
 
 					<# if ( data.args.show_all ) { #>
 						<li>
-							<a href="#" data-group="all" data-slug="all"> <?php _e( 'All', 'uabb-templates' ); ?> </a>
+							<a href="#" data-group="all" data-slug="all"> <?php _e( 'All', 'uabb' ); ?> </a>
 						</li>
 					<# } #>
 
@@ -134,7 +134,7 @@
 
 					<# if ( data.args.show_all ) { #>
 						<li>
-							<a href="#" data-group="all" data-slug="all"> <?php _e( 'All', 'uabb-templates' ); ?> </a>
+							<a href="#" data-group="all" data-slug="all"> <?php _e( 'All', 'uabb' ); ?> </a>
 						</li>
 					<# } #>
 
@@ -195,7 +195,7 @@
 								</noscript>
 						<# } #>
 						<span class="view-demo-wrap">
-							<span class="view-demo"> <?php _e( 'Quick View', 'uabb-templates' ); ?> </span>
+							<span class="view-demo"> <?php _e( 'Quick View', 'uabb' ); ?> </span>
 						</span>
 
 					<# if( 'tab' === data.args.open_in ) { #>
@@ -209,7 +209,7 @@
 							{{{ data.items[ key ].title.rendered }}}
 							<# if ( data.items[ key ]['uabb-template-type'] ) { #>
 								<# if ( 'premium' == data.items[ key ]['uabb-template-type'] ) { #>
-									<span class="site-type {{data.items[ key ]['uabb-template-type']}}"><?php _e( 'Agency', 'uabb-templates' ); ?></span>
+									<span class="site-type {{data.items[ key ]['uabb-template-type']}}"><?php _e( 'Agency', 'uabb' ); ?></span>
 								<# } else { #>
 									<span class="site-type {{data.items[ key ]['uabb-template-type']}}">{{data.items[ key ]['uabb-template-type']}}</span>
 								<# } #>
@@ -224,7 +224,7 @@
 	<# } else { #>
 		<div class="uabb-templates-not-found">
 			<p>
-				<?php _e( 'No templates found!', 'uabb-templates' ); ?><br/>
+				<?php _e( 'No templates found!', 'uabb' ); ?><br/>
 			</p>
 		</div>
 	<# } #>
@@ -241,7 +241,7 @@
 			<p>
 			<?php
 			/* translators: %1$s External Link */
-			printf( __( '<a target="_blank" href="%1$s">Suggest Your Ideas!</a>', 'uabb-templates' ), esc_url( 'https://wpastra.com/sites-suggestions/?utm_source=demo-import-panel&utm_campaign=uabb-templates&utm_medium=suggestions' ) );
+			printf( __( '<a target="_blank" href="%1$s">Suggest Your Ideas!</a>', 'uabb' ), esc_url( 'https://wpastra.com/sites-suggestions/?utm_source=demo-import-panel&utm_campaign=uabb-templates&utm_medium=suggestions' ) );
 			?>
 			</p>
 		</div>

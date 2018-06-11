@@ -71,12 +71,12 @@ if ( ! class_exists( 'UABB_Templates_Shortcode' ) ) :
 				'ApiURL'  => UABB_TEMPLATES_API,
 				'filters' => array(
 					'page_builder' => array(
-						'title'   => __( 'Page Builder', 'uabb-templates' ),
+						'title'   => __( 'Page Builder', 'uabb' ),
 						'slug'    => 'uabb-template-type',
 						'trigger' => 'astra-api-category-loaded',
 					),
 					'categories'   => array(
-						'title'   => __( 'Categories', 'uabb-templates' ),
+						'title'   => __( 'Categories', 'uabb' ),
 						'slug'    => 'uabb-template-category',
 						'trigger' => 'astra-api-category-loaded',
 					),
@@ -93,10 +93,10 @@ if ( ! class_exists( 'UABB_Templates_Shortcode' ) ) :
 				'ajaxurl'     => esc_url( admin_url( 'admin-ajax.php' ) ),
 				'settings'    => $settings,
 				'strings'     => array(
-					'selectSite'           => __( '- Select Site -', 'uabb-templates' ),
-					'loadingTitle'         => __( 'Loading...', 'uabb-templates' ),
-					'rowLoadingMessage'    => __( 'Section is loading please wait for a moment.', 'uabb-templates' ),
-					'layoutLoadingMessage' => __( 'Templates is loading please wait for a moment.', 'uabb-templates' ),
+					'selectSite'           => __( '- Select Site -', 'uabb' ),
+					'loadingTitle'         => __( 'Loading...', 'uabb' ),
+					'rowLoadingMessage'    => __( 'Section is loading please wait for a moment.', 'uabb' ),
+					'layoutLoadingMessage' => __( 'Templates is loading please wait for a moment.', 'uabb' ),
 				),
 			);
 
