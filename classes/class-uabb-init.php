@@ -27,7 +27,6 @@ class UABB_Init {
 
 			add_filter( 'fl_builder_settings_form_defaults', array( $this, 'uabb_global_settings_form_defaults' ), 10, 2 );	
 			// Load all the required files of bb-ultimate-addon
-			self::set_constants();
 			self::includes();
 			add_action( 'init', array( $this, 'init' ) );			
 
@@ -57,36 +56,11 @@ class UABB_Init {
 		return $actions;
 	}
 
-	static function set_constants()
-	{
-		if( ! defined( 'UABB_TEMPLATES_API_DOMAIN' ) ) {
-			define( 'UABB_TEMPLATES_API_DOMAIN', apply_filters( 'uabb_templates_api_domain', 'https://templates.ultimatebeaver.com/' ) );
-		}
-		if( ! defined( 'UABB_TEMPLATES_API' ) && defined( 'UABB_TEMPLATES_API_DOMAIN' ) ) {
-			define( 'UABB_TEMPLATES_API', UABB_TEMPLATES_API_DOMAIN . 'wp-json/wp/v2/' );
-		}
-		if( ! defined( 'UABB_TEMPLATES_VER' ) ) {
-			define( 'UABB_TEMPLATES_VER', '1.0.0' );
-		}
-		if( ! defined( 'UABB_TEMPLATES_FILE' ) ) {
-			define( 'UABB_TEMPLATES_FILE', BB_ULTIMATE_ADDON_FILE );
-		}
-		if( ! defined( 'UABB_TEMPLATES_BASE' ) ) {
-			define( 'UABB_TEMPLATES_BASE', plugin_basename( BB_ULTIMATE_ADDON_FILE ) );
-		}
-		if( ! defined( 'UABB_TEMPLATES_DIR' ) ) {
-			define( 'UABB_TEMPLATES_DIR', BB_ULTIMATE_ADDON_DIR . 'classes/uabb-templates/' );
-		}
-		if( ! defined( 'UABB_TEMPLATES_URI' ) ) {
-			define( 'UABB_TEMPLATES_URI', BB_ULTIMATE_ADDON_URL . 'classes/uabb-templates/' );
-		}
-	}
-
 	function includes() {
 
 		require_once BB_ULTIMATE_ADDON_DIR . 'classes/class-uabb-helper.php';
 
- 		require_once BB_ULTIMATE_ADDON_DIR . 'classes/uabb-templates/classes/class-uabb-templates.php';
+ 		require_once BB_ULTIMATE_ADDON_DIR . 'classes/uabb-templates/class-uabb-templates.php';
  		require_once BB_ULTIMATE_ADDON_DIR . 'classes/class-uabb-cloud-templates.php';
 		require_once BB_ULTIMATE_ADDON_DIR . 'classes/class-uabb-admin-settings.php';
 		require_once BB_ULTIMATE_ADDON_DIR . 'classes/class-uabb-admin-settings-multisite.php';
