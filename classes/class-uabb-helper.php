@@ -429,9 +429,9 @@ if( !class_exists( "BB_Ultimate_Addon_Helper" ) ) {
 
 			$templates       = get_site_option( '_uabb_cloud_templats', false );
 			$exist_templates = array(
-				'page-templates' => 0,
-				'sections'       => 0,
-				'presets'        => 0
+				'page-templates' => array(),
+				'sections'       => array(),
+				'presets'        => array()
 			);
 
 			if( is_array( $templates ) && count( $templates ) > 0 ) {
@@ -448,7 +448,10 @@ if( !class_exists( "BB_Ultimate_Addon_Helper" ) ) {
 								isset( $template_data['status'] ) && $template_data['status'] == true &&
 								isset( $template_data['dat_url_local'] ) && !empty( $template_data['dat_url_local'] )
 							) {
-								$exist_templates[$type] = ( count( $exist_templates[$type] ) + 1 );
+								if( ! empty( $exist_templates[$type] ) )
+								{
+									$exist_templates[$type] = ( count( $exist_templates[$type] ) + 1 );
+								}
 							}
 						}
 					}
