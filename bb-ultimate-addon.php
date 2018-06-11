@@ -23,7 +23,6 @@ if( !class_exists( "BB_Ultimate_Addon" ) ) {
 	define( 'BB_ULTIMATE_ADDON_FB_URL', 'https://www.brainstormforce.com/go/uabb-facebook-group/?utm_source=uabb-dashboard&utm_campaign=Lite&utm_medium=FB' );
 	define( 'BB_ULTIMATE_ADDON_TWITTER_URL', 'https://twitter.com/WeBrainstorm' );
 
-
 	class BB_Ultimate_Addon {
 
 		/*
