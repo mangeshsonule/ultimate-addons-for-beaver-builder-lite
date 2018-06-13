@@ -63,8 +63,10 @@ if( ! class_exists( 'UABB_Cloud_Templates' ) ) :
 
 		function uabb_templates_settings( $defaults )
 		{
-			$defaults['show-count']       = true;
-			$defaults['open-template-in'] = 'iframe';
+			$defaults['row-par-page']                   = 28;
+			$defaults['layout-par-page']                = 12;
+			$defaults['show-count']                     = true;
+			$defaults['open-template-in']               = 'iframe';
 			$defaults['no-of-visible-items-categories'] = 8; // Show the no. of items in <ul> and rest in <select>. Add negative number to show all.
 
 			return $defaults;
@@ -73,10 +75,12 @@ if( ! class_exists( 'UABB_Cloud_Templates' ) ) :
 		function styles_scripts( $hook )
 		{
 			wp_register_style( 'uabb-templates', BB_ULTIMATE_ADDON_URL . 'assets/css/uabb-templates.css', array() );
+			wp_register_script( 'uabb-templates', BB_ULTIMATE_ADDON_URL . 'assets/js/uabb-templates.js', array( 'jquery' ), BB_ULTIMATE_ADDON_LITE_VERSION, true );
 
 			if( 'settings_page_uabb-builder-settings' == $hook || 'settings_page_uabb-builder-multisite-settings' == $hook )
 			{
 				wp_enqueue_style( 'uabb-templates' );
+				wp_enqueue_script( 'uabb-templates' );
 			}
 		}
 
