@@ -302,6 +302,13 @@
 /**
  * Responsive Buttons.
  */
+.responsive-view {
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
 .responsive-view .dashicons.active,
 .responsive-view .dashicons:hover {
     background: #cccccc;
@@ -403,8 +410,13 @@ html.processing {
     color: #666;
     cursor: pointer;
     display: inline-block;
-    padding: 1em;
-    vertical-align: middle;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#TB_window.tablet .responsive-view,
+#TB_window.mobile .responsive-view {
+    right: 70px;
 }
 
 #TB_closeAjaxWindow {

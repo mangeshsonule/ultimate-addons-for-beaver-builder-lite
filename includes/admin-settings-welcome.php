@@ -24,7 +24,7 @@
 			</div>
 
 			<div class="fl-welcome-col">
-				<img class="fl-welcome-img" src="<?php echo BB_ULTIMATE_ADDON_URL; ?>/assets/images/welcome-uabb.jpg" alt="">
+				<img class="fl-welcome-img" src="<?php echo BB_ULTIMATE_ADDON_URL; ?>/assets/images/uabb.png" alt="">
 			</div>
 		</div>
 

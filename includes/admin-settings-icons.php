@@ -12,7 +12,7 @@
 					UABB_PREFIX 
 				); ?></p>
 			<span class="button uabb-reload-icons">
-				<i class="dashicons dashicons-update" style="padding: 3px;"></i>
+				<i class="dashicons dashicons-update" style="vertical-align: middle;"></i>
 				<?php _e( 'Reload Icons', 'uabb' ); ?>
 			</span>
 

@@ -1,7 +1,5 @@
 <div id="fl-uabb-premium-form" class="fl-settings-form uabb-fl-settings-form">
 
-	<h3 class="fl-settings-form-header"><?php _e( 'Premium Features', 'uabb' ); ?></h3>
-
 	<form id="uabb-form" action="<?php UABBBuilderAdminSettings::render_form_action( 'uabb-premium' ); ?>" method="post">
 
 		<div class="fl-settings-form-content">
