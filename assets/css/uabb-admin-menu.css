@@ -202,7 +202,7 @@
     max-width: none;
 }
 .fl-settings-content .fl-welcome-page-content {
-    max-width: 880px;
+    max-width: 1280px;
 }
 .fl-upgrade-page-content ul,
 .fl-welcome-page-content ul {
@@ -277,7 +277,7 @@
 
 .fl-settings-form {
     display: none;
-    max-width: 450px;
+    max-width: 920px;
 }
 .fl-settings-form-header {
     margin-bottom: 20px !important;
