@@ -1231,11 +1231,9 @@
 					$('#uabb-templates-wrap .spinner').remove();
 				}
 				
-				if( ! $('#uabb-templates-wrap .uabb-templates-load-more-sites').length )
-				{
+				if( 'click' === astraSitesShowcase.showSitesOn && ! $('#uabb-templates-wrap .uabb-templates-load-more-sites').length ) {
 					$('#uabb-templates-wrap').append( wp.template('uabb-templates-load-more-sites') );
 				}
-
 
 				// $('.uabb-templates-load-more-sites').removeClass( 'hide-me' );
 
@@ -1335,12 +1333,11 @@
 				$('#uabb-templates-wrap .uabb-templates-load-more-sites').remove();
 			}
 			$('#uabb-templates-wrap').append( wp.template('uabb-templates-spinner') );
-			
+
 			/**
 			 * @see _reinitGridScrolled() which called in trigger 'astra-api-post-loaded-on-scroll'
 			 */
 			AstraSitesShowcase._showSites( false, 'astra-api-post-loaded-on-scroll' );
-		
 		},
 
 		/**
@@ -1351,22 +1348,36 @@
 			var scrollDistance = $(window).scrollTop();
 
 			var themesBottom = Math.abs($(window).height() - $('#uabb-templates').offset().top - $('#uabb-templates').height());
-			themesBottom = themesBottom + 100 ;
+			themesBottom = themesBottom + 100;
 
 			ajaxLoading = $('body').data('scrolling');
 
-			if (scrollDistance > themesBottom && ajaxLoading == false) {
-				AstraSitesShowcase._updatedPagedCount();
+			$('body').addClass( 'uabb-templates-loading' );
 
-				$('#uabb-templates').find('.spinner').addClass('is-active');
+			if( $('#uabb-templates-wrap .uabb-templates-load-more-sites').length )
+			{
+				$('#uabb-templates-wrap .uabb-templates-load-more-sites').remove();
+			}
+			if( $('#uabb-templates-wrap .spinner').length )
+			{
+				$('#uabb-templates-wrap .spinner').remove();
+			}
 
-				$('body').data('scrolling', true);
-				
-				/**
-				 * @see _reinitGridScrolled() which called in trigger 'astra-api-post-loaded-on-scroll'
-				 */
-				AstraSitesShowcase._showSites( false, 'astra-api-post-loaded-on-scroll' );
+			if( ! $('#uabb-templates-wrap .no-more-demos').length ) {
+				$('#uabb-templates-wrap').append( wp.template('uabb-templates-spinner') );
+	
+				console.log( scrollDistance + ' > ' + themesBottom );
 
+				if (scrollDistance > themesBottom && ajaxLoading == false) {
+					AstraSitesShowcase._updatedPagedCount();
+
+					$('body').data('scrolling', true);
+					
+					/**
+					 * @see _reinitGridScrolled() which called in trigger 'astra-api-post-loaded-on-scroll'
+					 */
+					AstraSitesShowcase._showSites( false, 'astra-api-post-loaded-on-scroll' );
+				}
 			}
 		
 		},

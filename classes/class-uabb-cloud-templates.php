@@ -57,8 +57,17 @@ if( ! class_exists( 'UABB_Cloud_Templates' ) ) :
 		public function __construct()
 		{
 			// Filters & Hooks
+			
+			add_filter( 'uabb_templates_localize_vars', 		array( $this, 'localize_vars' ) );
 			add_filter( 'uabb_templates_default_settings', 		array( $this, 'uabb_templates_settings' ) );
 			add_action( 'admin_enqueue_scripts', 				array( $this, 'styles_scripts' ) );
+		}
+
+		function localize_vars( $defaults )
+		{
+			$defaults['showSitesOn'] = 'scroll';
+
+			return $defaults;
 		}
 
 		function uabb_templates_settings( $defaults )

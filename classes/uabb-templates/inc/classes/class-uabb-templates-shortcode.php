@@ -85,8 +85,8 @@ if ( ! class_exists( 'UABB_Templates_Shortcode' ) ) :
 
 			$settings = UABB_Templates_Helper::get_page_settings();
 
-			$data = array(
-				'showSitesOn' => apply_filters( 'astra_sites_showcase_show_sites_on', 'click' ),
+			$data = apply_filters( 'uabb_templates_localize_vars', array(
+				'showSitesOn' => 'click',
 				'apiEndpoint' => UABB_TEMPLATES_API,
 				'apiDomain'   => UABB_TEMPLATES_API_DOMAIN,
 				'ajaxurl'     => esc_url( admin_url( 'admin-ajax.php' ) ),
@@ -97,7 +97,7 @@ if ( ! class_exists( 'UABB_Templates_Shortcode' ) ) :
 					'rowLoadingMessage'    => __( 'Section is loading please wait for a moment.', 'uabb' ),
 					'layoutLoadingMessage' => __( 'Templates is loading please wait for a moment.', 'uabb' ),
 				),
-			);
+			));
 
 			wp_localize_script( 'uabb-templates-shortcode', 'astraSitesShowcase', $data );
 

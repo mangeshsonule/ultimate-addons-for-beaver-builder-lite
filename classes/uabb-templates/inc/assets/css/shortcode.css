@@ -612,3 +612,7 @@ div#TB_window.mobile {
 .uabb-template-type-row.site-single .template-meta {
     display: none;
 }
+
+/*.no-more-demos + .spinner {
+    display: none;
+}*/
