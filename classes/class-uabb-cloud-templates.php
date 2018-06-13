@@ -65,7 +65,7 @@ if( ! class_exists( 'UABB_Cloud_Templates' ) ) :
 		{
 			$defaults['show-count']       = true;
 			$defaults['open-template-in'] = 'iframe';
-			$defaults['no-of-visible-items-categories'] = -1; // Show the no. of items in <ul> and rest in <select>. Add negative number to show all.
+			$defaults['no-of-visible-items-categories'] = 8; // Show the no. of items in <ul> and rest in <select>. Add negative number to show all.
 
 			return $defaults;
 		}
