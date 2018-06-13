@@ -1,11 +1,16 @@
 <div id="fl-uabb-premium-form" class="fl-settings-form uabb-fl-settings-form">
 
 	<form id="uabb-form" action="<?php UABBBuilderAdminSettings::render_form_action( 'uabb-premium' ); ?>" method="post">
-
-		<div class="fl-settings-form-content">
+		<div id="poststuff">
+			<div id="post-body" class="metabox-holder columns-2">
+				<div id="postbox-container-2" class="postbox-container">
+					<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="uabb_about-plugin-purpose" class="postbox" style="display: block;">
+						<div id="uabb_about-plugin-purpose" class="postbox-1" style="display: block;">
+						<h2 class="hndle ui-sortable-handle"><span><h3><?php _e( 'Why Beavers love Ultimate Addons?', 'uabb' ); ?></h3></span></h2>
+							<div class="inside">
+						<div class="fl-settings-form-content">
 			<!-- Load Panels -->
 			<div class="uabb-form-setting">
-				<h3><?php _e( 'Why Beavers love Ultimate Addons?', 'uabb' ); ?></h3>
 				<ul>
 					<li><h4><?php _e( 'White Label', 'uabb' ); ?></h4><p><?php _e( 'You can White Label Ultimate Addons and provide a seamless experience to your clients without any extra cost.', 'uabb' ); ?></p></li>
 					<li><h4><?php _e( 'Lightweight', 'uabb' ); ?></h4><p><?php _e( 'Like Beaver Builder, Ultimate Addons is built for performance. It follows the best WordPress development standards.', 'uabb' ); ?></p></li>
@@ -20,9 +25,14 @@
 			</div>
 		</div>
 
-		<p class="submit">
+		<p class="uabb-submit">
 			<a class="button-primary" href="<?php echo BB_ULTIMATE_ADDON_UPGRADE_URL; ?>" target="_blank"><?php esc_attr_e( 'Upgrade Today', 'uabb' ); ?></a>
 		</p>
-
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</form>
 </div>

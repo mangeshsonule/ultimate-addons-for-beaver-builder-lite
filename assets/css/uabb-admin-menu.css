@@ -226,7 +226,9 @@
     max-width: 100%;
     display: inline-block;
 }
-
+.uabb-submit {
+    padding: 20px 0;
+}
 
 /* Modules Form */
 
@@ -267,7 +269,7 @@
 
 .fl-settings-form {
     display: none;
-    max-width: 920px;
+    max-width: 1200px;
 }
 .fl-settings-form-header {
     margin-bottom: 20px !important;

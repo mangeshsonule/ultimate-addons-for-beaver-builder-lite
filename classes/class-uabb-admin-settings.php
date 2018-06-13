@@ -206,7 +206,7 @@ final class UABBBuilderAdminSettings {
 		}
 
 		$items['uabb-icons'] = array(
-			'title' 	=> __( 'Font Icon Manager', 'uabb' ),
+			'title' 	=> __( 'Settings', 'uabb' ),
 			'show'		=>  ! is_network_admin() || ! FLBuilderAdminSettings::multisite_support(),
 			'priority'	=> 509
 		);
