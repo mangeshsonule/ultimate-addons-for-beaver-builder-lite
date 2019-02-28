@@ -1,3 +1,19 @@
+.uabb-notice .notice-container{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.uabb-notice .notice-content {
+	margin-left: 15px;
+}
+
+.uabb-notice .notice-image img{
+	max-width: 70px;
+}
+
 .uabb-review-notice-container {
 	display: flex;
 	align-items: center;
