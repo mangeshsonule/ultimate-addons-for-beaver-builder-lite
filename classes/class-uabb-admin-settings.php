@@ -126,8 +126,8 @@ final class UABBBuilderAdminSettings {
 						__( 'I already did', 'ultimate-addons-for-beaver-builder' )
 					),
 					'repeat-notice-after'        => MINUTE_IN_SECONDS,
-					'priority'                   => 10,
-					'display-with-other-notices' => true,
+					'priority'                   => 5,
+					'display-with-other-notices' => false,
 				)
 			);
 		}
